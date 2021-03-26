@@ -917,12 +917,12 @@ img {
 }
 
 .modal-form-icon {
+  position: absolute;
   display: block;
   width: 18px;
   height: 18px;
   /* background-color: red; */
   fill: var(--black-color);
-  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
@@ -930,7 +930,6 @@ img {
 
 .modal-form-icon-box {
   position: relative;
-  display: block;
   margin-top: 4px;
 }
 
