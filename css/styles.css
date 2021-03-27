@@ -1044,9 +1044,10 @@ img {
   content: "";
   width: 16px;
   height: 16px;
-  outline: 1px solid var(--black-color);
+  outline: 1px solid var(--color-title);
   cursor: pointer;
   margin-right: 8px;
+  border-radius: 0;
 }
 
 .modal-form-check-desc {
@@ -1093,4 +1094,9 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  border-color: var(--black-color);
 }
