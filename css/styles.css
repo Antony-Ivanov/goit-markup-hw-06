@@ -668,6 +668,36 @@ img {
   margin-right: 0;
 }
 
+.footer-signup-form {
+  display: flex;
+}
+.email-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .modal-btn {
+  display: flex;
+  padding: 10px 28px;
+}
+.modal-btn-icon {
+  margin-left: 10px;
+  fill: var(--accent-color);
+}
 /* /footer */
 
 /*==================portfolio=============== */
@@ -922,10 +952,11 @@ img {
   width: 18px;
   height: 18px;
   /* background-color: red; */
-  fill: var(--black-color);
+  fill: var(--color-title);
   top: 50%;
-  transform: translateY(-50%);
-  left: 12px;
+  transform: translateX(-50%);
+  left: 15px;
+  align-items: center;
 }
 
 .modal-form-icon-box {
@@ -935,6 +966,11 @@ img {
 
 .modal-form-input:focus + .modal-form-icon {
   fill: var(--accent-color);
+}
+
+.modal-form-massage:focus {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .modal-form-massage {
@@ -954,4 +990,18 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
+}
+
+.modal-form-check-desc::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  outline: 1px solid var(--black-color);
+}
+
+.modal-form-term:checked + .modal-form-check-desc::before {
+  /* background-color: var(--accent-color);
+  border: 4px solid var(--accent-color); */
+  background-image: url(C:\Users\zveru\Documents\GitHub\goit-markup-hw-06\img\foot-checkb\Check.jpg);
 }
