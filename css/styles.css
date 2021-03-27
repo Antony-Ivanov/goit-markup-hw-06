@@ -696,7 +696,12 @@ img {
 }
 .modal-btn-icon {
   margin-left: 10px;
-  fill: var(--accent-color);
+  /* fill: var(--accent-color); */
+}
+
+.form-wrapper {
+  margin-left: 93px;
+  align-items: center;
 }
 /* /footer */
 
@@ -876,15 +881,6 @@ img {
   padding: 40px;
 }
 
-/* .close-btn-icon {
-  position: absolute;
-  bottom: 50%;
-  right: 50%;
-  transform: translate(50%, 50%);
-  width: 18px;
-  height: 18px;
-} */
-
 .close-btn-icon {
   position: absolute;
   width: 18px;
@@ -930,6 +926,10 @@ img {
 }
 
 .modal-form-field {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  color: var(--color-text);
 }
 
 .modal-form-input {
@@ -939,6 +939,10 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
+  /* margin-bottom: 20px; */
+}
+
+.modal-form {
 }
 
 .modal-form-input:focus {
@@ -962,6 +966,7 @@ img {
 .modal-form-icon-box {
   position: relative;
   margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .modal-form-input:focus + .modal-form-icon {
@@ -998,10 +1003,55 @@ img {
   width: 16px;
   height: 16px;
   outline: 1px solid var(--black-color);
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.modal-form-check-desc {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .modal-form-term:checked + .modal-form-check-desc::before {
-  /* background-color: var(--accent-color);
-  border: 4px solid var(--accent-color); */
-  background-image: url(C:\Users\zveru\Documents\GitHub\goit-markup-hw-06\img\foot-checkb\Check.jpg);
+  background-image: url(../img/foot-checkb/icon-check.svg);
+}
+
+.modal-form-term:focus + .modal-form-check-desc::before {
+  border: 1px solid var(--accent-color);
+}
+
+.modal-form-btn {
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-self: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* outline: none; */
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.modal-form-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+
 }
